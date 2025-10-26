@@ -10,7 +10,7 @@ export default function ShowList({ shows }) {
   const [showPreviewsOnly, setShowPreviewsOnly] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [theme, setTheme] = useState("light");
-  const now = useState(new Date());
+  const now = new Date();
 
   useEffect(() => {
     const media = window.matchMedia("(prefers-color-scheme: dark)");
